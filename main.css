@@ -1,0 +1,135 @@
+.flex {
+    display: flex;
+}
+
+.gap {
+    gap: 10px;
+}
+
+.rounded {
+    border-radius: 4px;
+}
+
+.filter-invert {
+    filter: invert(1);
+}
+
+.border {
+    border: 1px solid white;
+}
+
+.card-margin {
+    margin: 0px 0px 0px 6px;
+}
+
+.p-1 {
+    padding: 5px;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.invert {
+    filter: invert(1);
+}
+
+.space-btw {
+    justify-content: space-between;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+/* ============================================
+   PROFESSIONAL DARK SCROLLBAR - FINAL
+   ============================================ */
+
+/* --- Scrollbar Width --- */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+/* --- Track (Background) --- */
+::-webkit-scrollbar-track {
+  background: rgba(15, 15, 20, 0.6);
+  border-radius: 20px;
+  margin: 4px;
+}
+
+/* --- Thumb (Draggable Part) --- */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    180deg,
+    rgba(123, 104, 238, 0.9) 0%,
+    rgba(74, 144, 226, 0.9) 100%
+  );
+  border-radius: 20px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 
+    0 0 8px rgba(123, 104, 238, 0.4),
+    inset 0 0 4px rgba(255, 255, 255, 0.1);
+}
+
+/* --- Thumb Hover --- */
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(
+    180deg,
+    rgba(139, 120, 254, 1) 0%,
+    rgba(90, 160, 242, 1) 100%
+  );
+  box-shadow: 
+    0 0 14px rgba(123, 104, 238, 0.8),
+    0 0 24px rgba(74, 144, 226, 0.5),
+    inset 0 0 6px rgba(255, 255, 255, 0.2);
+}
+
+/* --- Thumb Active (Dragging) --- */
+::-webkit-scrollbar-thumb:active {
+  background: linear-gradient(
+    180deg,
+    rgba(159, 140, 255, 1) 0%,
+    rgba(110, 180, 255, 1) 100%
+  );
+  box-shadow: 
+    0 0 20px rgba(123, 104, 238, 1),
+    0 0 30px rgba(74, 144, 226, 0.7),
+    inset 0 0 8px rgba(255, 255, 255, 0.3);
+}
+
+/* --- Arrows / Buttons Completely Hide --- */
+::-webkit-scrollbar-button {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+  background: transparent !important;
+}
+
+::-webkit-scrollbar-button:start:decrement,
+::-webkit-scrollbar-button:end:increment,
+::-webkit-scrollbar-button:vertical:start:increment,
+::-webkit-scrollbar-button:vertical:end:decrement,
+::-webkit-scrollbar-button:single-button {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+}
+
+/* --- Corner --- */
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+/* --- Firefox Support --- */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(123, 104, 238, 0.9) rgba(15, 15, 20, 0.6);
+}

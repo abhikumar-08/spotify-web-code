@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Listen to your favorite music, discover new songs, explore playlists, and enjoy a seamless music experience with our online music player.">
+    <title>Spotify-Web Player: Listen to Music, Podcasts, and Audiobooks Online</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container flex">
+
+        <!-- =======LEFT PART======= -->
+        <aside class="left">
+
+            <!-- =======LEFT TOP PART======= -->
+            <div class="home rounded">
+                <div class="logo flex gap">
+                    <img src="/svg/logo.svg" alt="Spotify Logo">
+                    <h3>Spotify</h3>
+                </div>
+                <nav aria-label="Main navigation">
+                    <ul class="home-ul">
+                        <li class="flex gap items-center active"><img class="invert" src="/svg/home.svg"
+                                alt="Home Icon">
+                            Home</li>
+                        <li class="flex gap items-center"><img class="invert" src="/svg/search.svg" alt="Search Icon">
+                            Search</li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- =======LEFT BOTTOM PART======= -->
+            <div class="library rounded">
+                <div class="library-header flex gap items-center">
+                    <img class="invert" src="/svg/library.svg" alt="Library Icon">
+                    <h3>Library</h3>
+                </div>
+                <footer class="library-footer flex">
+                    <div><a href="https://www.spotify.com/in-en/legal/"><span>Legal</span></a></div>
+                    <div><a href="https://www.spotify.com/in-en/safetyandprivacy/"><span>Safety &amp; Privacy
+                                Center</span></a></div>
+                    <div><a href="https://www.spotify.com/in-en/legal/privacy-policy/"><span>Privacy Policy</span></a>
+                    </div>
+                    <div><a href="https://www.spotify.com/in-en/legal/cookies-policy/"><span>Cookies</span></a></div>
+                    <div><a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3"><span>About Ads</span></a>
+                    </div>
+                    <div><a href="https://www.spotify.com/in-en/accessibility/"><span>Accessibility</span></a></div>
+                </footer>
+            </div>
+
+        </aside>
+
+        <!-- =======RIGHT PART======= -->
+        <div class="right rounded">
+            <header class="right-header  rounded space-btw flex">
+                <div class="left-right-btn gap flex">
+                    <button aria-label="left-scroll"><img class="invert" src="\svg\left-btn.svg" alt=""></button>
+                    <button aria-label="right-scroll"><img class="invert" src="\svg\right-btn.svg" alt=""></button>
+                </div>
+                <div class="log-sign-btn gap flex">
+                    <button id="singup-btn" class="sign-btn pointer">Sign Up</button>
+                    <button id="login-btn" class="log-btn pointer">Log In</button>
+                </div>
+            </header>
+            <main class="right-main">
+                <div class="spotify-playlists">
+                    <h1>Spotify Playlists</h1>
+
+                    <div class="card-container flex gap">
+                        <div class="card-info card-margin">
+                            <div class="play-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                                    <circle cx="24" cy="24" r="24" fill="#1ed760" />
+                                    <path
+                                        d="M19 13.5a1.5 1.5 0 0 0-2.25 1.3v18.4a1.5 1.5 0 0 0 2.25 1.3l15-9.2a1.5 1.5 0 0 0 0-2.6z"
+                                        fill="#000" />
+                                </svg>
+                            </div>
+                            <img width="150" src="/assets/happy hits!.webp" alt="" fetchpriority="high" loading="eager">
+                            <h2>Happy Hits!</h2>
+                            <p>Hits to boost your mood and fill you with happiness!</p>
+                        </div>
+
+
+                        <div class="card-info card-margin">
+                            <div class="play-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                                    <circle cx="24" cy="24" r="24" fill="#1ed760" />
+                                    <path
+                                        d="M19 13.5a1.5 1.5 0 0 0-2.25 1.3v18.4a1.5 1.5 0 0 0 2.25 1.3l15-9.2a1.5 1.5 0 0 0 0-2.6z"
+                                        fill="#000" />
+                                </svg>
+                            </div>
+                            <img width="150" src="/assets/happy hits!.webp" alt="" fetchpriority="high" loading="eager">
+                            <h2>Happy Hits!</h2>
+                            <p>Hits to boost your mood and fill you with happiness!</p>
+                        </div>
+
+
+                        <div class="card-info card-margin">
+                            <div class="play-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                                    <circle cx="24" cy="24" r="24" fill="#1ed760" />
+                                    <path
+                                        d="M19 13.5a1.5 1.5 0 0 0-2.25 1.3v18.4a1.5 1.5 0 0 0 2.25 1.3l15-9.2a1.5 1.5 0 0 0 0-2.6z"
+                                        fill="#000" />
+                                </svg>
+                            </div>
+                            <img width="150" src="/assets/happy hits!.webp" alt="" fetchpriority="high" loading="eager">
+                            <h2>Happy Hits!</h2>
+                            <p>Hits to boost your mood and fill you with happiness!</p>
+                        </div>
+
+
+                        <div class="card-info card-margin">
+                            <div class="play-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                                    <circle cx="24" cy="24" r="24" fill="#1ed760" />
+                                    <path
+                                        d="M19 13.5a1.5 1.5 0 0 0-2.25 1.3v18.4a1.5 1.5 0 0 0 2.25 1.3l15-9.2a1.5 1.5 0 0 0 0-2.6z"
+                                        fill="#000" />
+                                </svg>
+                            </div>
+                            <img width="150" src="/assets/happy hits!.webp" alt="" fetchpriority="high" loading="eager">
+                            <h2>Happy Hits!</h2>
+                            <p>Hits to boost your mood and fill you with happiness!</p>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="script.js" defer></script>
+</body>
+
+</html>

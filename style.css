@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background: black;
+    --bg-grey: #2c2b2b;
+    --text-color: white;
+    --card-bg: #3b3a3a;
+}
+html{
+     scroll-behavior: smooth;
+}
+body {
+    background-color: var(--background);
+    color: var(--text-color);
+    font-family: 'Inter', sans-serif;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+}
+
+/* ======= LEFT  PART=======  */
+.left {
+    width: 20vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.home,
+.library {
+    background-color: var(--bg-grey);
+}
+
+.home {
+    height: 20vh;
+    margin: 4px 3px 2px 3px;
+}
+
+/* ======= LEFT  TOP PART=======  */
+.logo {
+    align-items: center;
+    padding: 10px 20px;
+    cursor: default;
+    width: 100%;
+}
+
+.logo img {
+    width: 23px;
+}
+
+.home-ul li {
+    padding: 8px 20px;
+    margin: 5px 0;
+    cursor: pointer;
+    color: #b5acac;
+    font-size: 16px;
+    font-weight: 500;
+    width: 100%;
+}
+
+.home-ul li img {
+    width: 18px;
+}
+
+.home-ul li.active {
+    color: #fff;
+    font-weight: 700;
+}
+
+/* =======LEFT BOTTOM PART=======  */
+
+.library {
+    position: relative;
+    margin: 2px;
+    height: 80vh;
+}
+
+.library-header {
+    cursor: default;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+.library-header img {
+    width: 23px;
+}
+
+.library-header h3 {
+    color: white;
+}
+
+.library-footer {
+    bottom: 0;
+    position: absolute;
+    min-height: 50px;
+    font-size: 12px;
+    flex-wrap: wrap;
+    gap: 8px 12px;
+}
+
+.library-footer a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 24px;
+    padding: 4px 2px;
+    line-height: 1.4;
+}
+
+.library-footer a {
+    color: rgb(150, 149, 149);
+}
+
+/* ======= RIGHT  PART=======  */
+.right {
+    width: 80vw;
+    background-color: var(--bg-grey);
+    margin: 3px 0px 2px 0px;
+
+}
+
+.right-header {
+    padding: 6px;
+    background-color: rgb(82, 81, 81);
+}
+
+.left-right-btn button {
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    background-color: #1f1f1f;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.left-right-btn button img {
+    width: 13px;
+    height: 13px;
+    object-fit: contain;
+}
+
+.left-right-btn button:hover {
+    background-color: #302f2f;
+}
+
+.log-sign-btn button {
+    padding: 8px;
+    border: none;
+    border-radius: 15px;
+}
+
+#singup-btn {
+    background-color: var(--background);
+    color: var(--text-color);
+    font-weight: 600;
+    font-family: 'inter', sans-serif;
+}
+
+#singup-btn:hover {
+    background-color: rgb(51, 51, 51);
+}
+
+#login-btn {
+    font-weight: 600;
+    font-family: 'inter', sans-serif;
+}
+
+.spotify-playlists h1 {
+    padding: 12px;
+    font-size: 20px;
+}
+
+.card-container {
+    flex-wrap: wrap;
+    max-height: 85vh;
+    overflow-y: scroll;
+}
+
+.card-info {
+    position: relative;
+    padding: 6px;
+    border-radius: 4px;
+    background-color: var(--card-bg);
+    width: 170px;
+    cursor: default;
+}
+.card-info:hover{
+    background-color: #4d4c4c;;
+}
+.card-info img {
+    width: 100%;
+    object-fit: contain;
+    border-radius: 4px 4px 0px 0px;
+}
+
+.card-info h2 {
+    padding: 2px 3px;
+    font-size: 15px;
+}
+
+.card-info p {
+    font-size: 11px;
+    padding: 4px;
+}
+
+.play-btn {
+    position: absolute;
+    cursor: pointer;
+    width: 35px;
+    top: 126px;
+    left: 110px;
+    opacity: 0;
+    transition: all 0.5s ease-out;
+}
+
+.card-info:hover .play-btn {
+    opacity: 1;
+    top: 110px;
+}
